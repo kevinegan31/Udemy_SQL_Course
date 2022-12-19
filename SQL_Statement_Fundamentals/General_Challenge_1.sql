@@ -27,3 +27,20 @@ Retrieve the list of names for those distinct districts from Challenge No.3.
 */
 SELECT DISTINCT(district)
 FROM address;
+
+/*
+Challenge No.5
+How many films have a rating of R and a replacement cost between $5 and $15?
+*/
+SELECT COUNT(*)
+FROM film
+WHERE rating = 'R'
+AND (replacement_cost BETWEEN 5 AND 15);
+
+/*
+Challenge No.6
+How many films have the word Truman somewhere in the title?
+*/
+SELECT COUNT(*)
+FROM film
+WHERE title LIKE '%Truman%';
